@@ -6,7 +6,7 @@
 /*   By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 10:47:14 by rrhnizar          #+#    #+#             */
-/*   Updated: 2023/09/23 20:09:30 by rrhnizar         ###   ########.fr       */
+/*   Updated: 2023/09/23 20:28:34 by rrhnizar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,8 +58,9 @@ int	Span::shortestSpan()
 	int	minSpan;
 	if(numbers.size() < 2)
 		throw std::runtime_error("not enough numbers to calculate distance");
-	
 	std::sort(numbers.begin(), numbers.end());
+	for (size_t i = 0; i < numbers.size(); ++i) 
+		std::cout << numbers.at(i) << std::endl;
 	minSpan = numbers.at(1) - numbers.at(0);
 	for (size_t i = 2; i < numbers.size(); ++i) 
 	{

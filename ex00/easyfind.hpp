@@ -6,7 +6,7 @@
 /*   By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 10:18:35 by rrhnizar          #+#    #+#             */
-/*   Updated: 2023/09/23 13:00:16 by rrhnizar         ###   ########.fr       */
+/*   Updated: 2023/09/23 20:37:12 by rrhnizar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 #include <stack>
 #include <iterator>
 #include <list>
+#include <algorithm>// I include this header for use  std::find 
 
 template <typename T>
 

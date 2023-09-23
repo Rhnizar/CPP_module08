@@ -6,7 +6,7 @@
 /*   By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 10:46:31 by rrhnizar          #+#    #+#             */
-/*   Updated: 2023/09/23 19:19:15 by rrhnizar         ###   ########.fr       */
+/*   Updated: 2023/09/23 20:37:17 by rrhnizar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 #include <iostream>
 #include <vector>
+#include <algorithm> // I include this header for use std::sort
 
 class Span
 {

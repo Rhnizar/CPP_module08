@@ -6,7 +6,7 @@
 /*   By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 10:18:32 by rrhnizar          #+#    #+#             */
-/*   Updated: 2023/09/23 13:09:23 by rrhnizar         ###   ########.fr       */
+/*   Updated: 2023/09/23 20:35:09 by rrhnizar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int main()
 		container.push_back(30);
 		container.push_back(40);
 		container.push_back(50);
-		std::cout << *easyfind(container, 20);
+		std::cout << *easyfind(container, 20) <<std::endl;
 	}
 	catch(std::exception& ex)
 	{
