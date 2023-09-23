@@ -6,7 +6,7 @@
 /*   By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 10:18:35 by rrhnizar          #+#    #+#             */
-/*   Updated: 2023/09/20 10:40:37 by rrhnizar         ###   ########.fr       */
+/*   Updated: 2023/09/23 13:00:16 by rrhnizar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,21 @@
 #define EASYFIND_HPP
 
 #include <iostream>
+#include <vector>
+#include <stack>
+#include <iterator>
+#include <list>
 
 template <typename T>
 
-T	easyfind(T firstOne, int secondOne)
+typename T::iterator	easyfind(T& firstOne, int secondOne)
 {
-	if (firstOne == secondOne)
-		return 	firstOne;
+	typename T::iterator it = std::find(firstOne.begin(), firstOne.end(), secondOne);
+
+	if (it != firstOne.end())
+		return it;
 	else
-		throw std::out_of_range("this member not in container !!");
-	return 0;
+		throw std::runtime_error("element not found !!");
 }
+
 #endif
