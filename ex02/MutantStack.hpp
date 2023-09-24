@@ -6,7 +6,7 @@
 /*   By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 12:41:20 by rrhnizar          #+#    #+#             */
-/*   Updated: 2023/09/24 12:13:26 by rrhnizar         ###   ########.fr       */
+/*   Updated: 2023/09/24 18:54:12 by rrhnizar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 #include <iostream>
 #include <stack>
 
-template <typename T, class container=std::deque<T> >
+template <typename T, typename container=std::deque<T> >
 
 class MutantStack : public std::stack<T>
 {
